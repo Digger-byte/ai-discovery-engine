@@ -46,4 +46,7 @@ export const questions = [
   "What kind of business do you run?",
   "What's one task that takes too much of your time each week?",
   "Do you create content or send marketing emails regularly?",
-  "How do you currently get ne
+  "How do you currently get new clients or leads?",
+  "What part of your sales or marketing would you love to automate?",
+  "If AI could solve one problem in your business, what would it be?"
+]
