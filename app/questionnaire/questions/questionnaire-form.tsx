@@ -10,10 +10,9 @@
 </div>
 
 // And for the button:
-<Button 
-  onClick={handleNext} 
-  className="w-full" 
-  style={{ backgroundColor: 'rgb(0, 102, 204)' }}
+<Button
+  onClick={handleNext}
+  className="w-full bg-primary"
   disabled={isSubmitting}
 >
   {currentQuestionIndex < questions.length - 1
