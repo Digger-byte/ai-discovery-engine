@@ -1,22 +1,10 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'AI Discovery Engine™',
-  description: 'Discover the perfect AI solutions for your business needs',
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Home() {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-4xl font-bold">AI Discovery Engine™</h1>
+      <p className="mt-4 text-xl">
+        Discover the perfect AI solutions for your business needs
+      </p>
+    </main>
   )
 }
