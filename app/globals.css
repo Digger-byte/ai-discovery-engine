@@ -3,25 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;  /* Black text */
+  --background-start-rgb: 255, 255, 255;  /* White background */
+  --background-end-rgb: 255, 255, 255;  /* White background */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255;  /* White text in dark mode */
+    --background-start-rgb: 0, 0, 0;  /* Black background in dark mode */
+    --background-end-rgb: 0, 0, 0;  /* Black background in dark mode */
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
+/* Add primary color for buttons and accents */
+:root {
+  --primary-rgb: 0, 102, 204;  /* Blue color */
+  --primary-foreground-rgb: 255, 255, 255;  /* White text on primary */
 }
